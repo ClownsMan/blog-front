@@ -1,0 +1,21 @@
+{
+  "name": "blog-front",
+  "version": "0.0.1",
+  "description": "the blog of front end",
+  "scripts": {
+    "dev": "concurrently \"npm run serve:vite\" \"npm run serve:vue\"",
+    "install": "concurrently \"npm run install:vite\" \"npm run install:vue\"",
+    "serve:vite": "cd vite-project && npm run dev",
+    "serve:vue": "cd vueToApp && npm run serve",
+    "install:vite": "cd vite-project && npm install",
+    "install:vue": "cd vueToApp && npm install"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "wyc",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
